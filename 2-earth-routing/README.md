@@ -1,6 +1,6 @@
 # STRUCTURE D'APPLICATION #2 - ROUTING
 
-> !! Avant de faire cet exercice, vous devez avoir fait celui-ci : [PHP-DRY-Earth](https://github.com/DFS-1/PHP-DRY-Earth) !!
+> !! Avant de faire cet exercice, vous devez avoir fait celui-ci : [1-earth-dry](https://github.com/DFS-1/PHP-DRY-Earth) !!
 
 ## ETAPE 1 : structure, encore !
 
