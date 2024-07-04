@@ -1,0 +1,32 @@
+#talkToUs {
+	margin-top: 70px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	background-image: var(--talkToUsImgUrl);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	height: 500px;
+}
+#talkToUs h2 {
+	font-size: 3rem;
+	font-weight: 500;
+}
+#talkToUs button {
+	padding: 10px 40px;
+	background-color: var(--secondaryColor);
+	color: white;
+	border: none;
+	font-size: 1.2rem;
+	letter-spacing: 5px;
+}
+@media screen and (max-width: 768px) {
+	#talkToUs {
+		margin-top: 40px;
+		height: 300px;
+	}
+}
