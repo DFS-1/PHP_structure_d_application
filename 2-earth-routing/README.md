@@ -314,10 +314,10 @@ $pagePath = $router->getPath();
 > Hola ! ça pique là ! ça a tout changé !\
 > Ok. Il n'y a pas vraiment de code en plus, il est simplement ordonné différemment.\
 > Explications :
-> - Dans *Router.php*, la propriété *page* est de type *string*. Bon.\
-> - Le constructeur (*public function __construct()*), appelé lors de l'instanciation de la classe (*new Router()*), détermine la valeur de la propriété *page* (*this->page*).\
+> - Dans *Router.php*, la propriété *page* est de type *string*. Bon.
+> - Le constructeur (*public function __construct()*), appelé lors de l'instanciation de la classe (*new Router()*), détermine la valeur de la propriété *page* (*this->page*).
 > Une fois la classe instanciée (*new Router()*), on récupère la valeur de la propriété *page* avec la méthode *getPage()*.\
-> - Enfin, la méthode *getPath()* nous renvoie le chemin du fichier à inclure dans *base.php*.\
+> - Enfin, la méthode *getPath()* nous renvoie le chemin du fichier à inclure dans *base.php*.
 > - C'est juste une logique différente, mais d'un point de vue fonctionnel, ça fait la même chose qu'avant.
 
 > Bon, on arrête là pour cette partie.\
