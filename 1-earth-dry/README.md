@@ -39,7 +39,7 @@
 
 - Créer un dossier *public* à la racine du projet
 - Créer un dossier *assets* dans le dossier *public*
-- Créer une constante ASSETS contenant le chemin *public/assets*
+- Créer une constante ASSETS contenant le chemin *public/assets/*
 - Déplacer le dossier *css* dans le dossier *public/assets*
 - Adapter les chemins des balises Link et Script, ainsi que ceux des images en utilisant la constante ASSETS
 - Créer une constante TITLE contenant "Earth"
