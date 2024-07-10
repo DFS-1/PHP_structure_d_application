@@ -32,6 +32,7 @@
 - Dans *src*, créer un dossier *template*
 - Dans *src/template*, créer un dossier *template-parts*
 - Placer les fichiers php comprenant des parties de pages (header, footer,...) dans ce dossier *src/template/template-parts*
+- Inclure le fichier *src/config/config.php* dans toutes les pages (en haut)
 - Adapter les chemins dans les include en utilisant la constante TEMPLATE_PARTS
 
 ### On range
