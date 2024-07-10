@@ -25,7 +25,7 @@
 - Créer un dossier *src*
 - Créer un dossier *src/config*
 - Dans *src/config*, créer un fichier *config.php*
-- Dans *src/config/config.php*, créer une constante TEMPLATE_PARTS (avec define()) contenant le chemin suivant : *src/template/template-parts*
+- Dans *src/config/config.php*, créer une constante TEMPLATE_PARTS (avec define()) contenant le chemin suivant : *src/template/template-parts/*
 
 ### On structure
 
