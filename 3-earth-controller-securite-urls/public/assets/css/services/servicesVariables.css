@@ -1,0 +1,5 @@
+:root {
+	--headerHeight: 65vh;
+	--headerBackgroundImgUrl: url(../../images/servicesHeaderBg.jpg);
+	--talkToUsImgUrl: url(../../images/aboutTalkToUs.jpg);
+}
