@@ -20,9 +20,14 @@ class AppController
     {
         $this->render('contact');
     }
+    public function notFound()
+    {
+        $this->render('404');
+    }
 
     private function render($page)
     {
+        $pagePath = PAGES . $page . ".php"; // le chemin complet de la page
         include TEMPLATE . 'base.php';
     }
 }

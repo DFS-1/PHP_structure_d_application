@@ -161,19 +161,13 @@ class Router
 ```php
 <?php
 require_once CLASSES . 'Router.php';
-require_once './src/controller/AppController.php';
+require_once CLASSES . 'AppController.php';
 
 class Kernel
 {
-    private Router $router;
-
-    public function __construct()
-    {
-        $this->router = new Router();
-    }
-
     public function bootstrap()
     {
+        $this->router = new Router();
         $controller = new AppController();
         $controllerMethod = $this->router->getControllerMethod();
         if (method_exists($controller, $controllerMethod)) {
