@@ -433,7 +433,8 @@ require_once './vendor/config/config.php';
 
 use vendor\classes\Kernel;
 
-Kernel::bootstrap();
+$kernel = new Kernel();
+$kernel->bootstrap();
 ```
 
 ## ETAPE 12 : ré-écriture d'urls
@@ -474,4 +475,48 @@ RewriteEngine On
 
 # Réécriture générique pour toutes les pages
 RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1 [L]
+```
+
+# ETAPE 13 : méthode static
+
+> Au lieu d'instancier la classe *Kernel* puis d'appeler la méthode *bootstrap*, on peut appeler directement cette méthode sur la classe *Kernel* :
+
+- index.php
+
+```php
+<?php
+require 'vendor/autoload.php';
+require_once './vendor/config/config.php';
+
+use vendor\classes\Kernel;
+
+Kernel::bootstrap(); // appel static à la méthode bootstrap de la classe Kernel (pas d'instanciation)
+```
+
+> Il faut modifier la méthode *bootstrap* en static :
+
+- vendor/classes/Kernel.php
+
+```php
+<?php
+
+namespace vendor\classes;
+
+use vendor\classes\Router;
+use App\controller\AppController;
+
+class Kernel
+{
+    public static function bootstrap()
+    {
+        $router = new Router();
+        $controller = new AppController();
+        $controllerMethod = $router->getControllerMethod();
+        if (method_exists($controller, $controllerMethod)) {
+            $controller->$controllerMethod(); //appel de la méthode du controller
+        } else {
+            $controller->notFound();
+        }
+    }
+}
 ```
