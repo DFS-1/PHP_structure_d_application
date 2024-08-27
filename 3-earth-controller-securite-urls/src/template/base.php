@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php include './src/template/template-parts/_head.php'; ?>
+<?php include TEMPLATE_PARTS . '/_head.php'; ?>
 
 <body>
     <?php include $pagePath; ?>

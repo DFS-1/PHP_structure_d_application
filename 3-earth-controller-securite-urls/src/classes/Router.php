@@ -6,12 +6,20 @@ class Router
 
     public function __construct()
     {
-        $this->page = isset($_GET["page"]) ? $_GET["page"] : "home";
+        $this->page = isset($_GET["page"]) ? $_GET["page"] : HOMEPAGE;
     }
 
     public function getPage(): string
     {
         return $this->page;
+    }
+
+    public function getControllerMethod()
+    {
+        if (array_key_exists($this->page, ROUTES)) {
+            return ROUTES[$this->page];
+        }
+        return NOT_FOUND_ROUTE; // 404
     }
 
     public function getPath(): string

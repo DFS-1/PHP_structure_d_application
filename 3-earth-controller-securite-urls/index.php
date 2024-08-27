@@ -5,6 +5,8 @@
 $router = new Router();
 $page = $router->getPage();
 $pagePath = $router->getPath();
+
+var_dump($router->getControllerMethod());
 ?>
 
 <?php include TEMPLATE . 'base.php' ?>
