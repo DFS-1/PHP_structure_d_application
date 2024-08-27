@@ -28,6 +28,9 @@ class AppController
     private function render($page)
     {
         $pagePath = PAGES . $page . ".php"; // le chemin complet de la page
+        if (!file_exists($pagePath)) {
+            header('location:index.php?page=' . NOT_FOUND_ROUTE);
+        }
         include TEMPLATE . 'base.php';
     }
 }

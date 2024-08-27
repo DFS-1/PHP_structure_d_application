@@ -206,6 +206,8 @@ define("HOMEPAGE", "home");
 
 define("NOT_FOUND_ROUTE", "404");
 
+define("TITLE", "Earth");
+
 ```
 
 > On intégre ce fichier à *src/config/config.php* :
@@ -220,8 +222,6 @@ define("TEMPLATE", SRC . "template/");
 define("TEMPLATE_PARTS", TEMPLATE . "template-parts/");
 
 define("ASSETS", "./public/assets/");
-
-define("TITLE", "Earth");
 
 define("FONCTIONS", SRC . "fonctions/");
 
