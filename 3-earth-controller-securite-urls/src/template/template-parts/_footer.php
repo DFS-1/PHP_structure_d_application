@@ -1,10 +1,11 @@
 <footer>
     <nav>
         <ul>
-            <li><a href="./index.php?page=home">HOME</a></li>
-            <li><a href="./index.php?page=about">ABOUT</a></li>
-            <li><a href="./index.php?page=services">SERVICES</a></li>
-            <li><a href="./index.php?page=contact">CONTACT</a></li>
+            <li><a href="./home">HOME</a></li>
+            <li><a href="./about">ABOUT</a></li>
+            <li><a href="./services">SERVICES</a></li>
+            <li><a href="./contact">CONTACT</a></li>
+            <li><a href="./connexion">CONNEXION</a></li>
         </ul>
     </nav>
     <div>
