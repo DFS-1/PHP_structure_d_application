@@ -3,7 +3,7 @@
 namespace vendor\classes;
 
 use vendor\classes\Router;
-use vendor\classes\AppController;
+use App\controller\AppController;
 
 class Kernel
 {

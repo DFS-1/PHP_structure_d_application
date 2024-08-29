@@ -1,6 +1,6 @@
 <?php
 
-namespace vendor\classes;
+namespace App\controller;
 
 use vendor\classes\AbstractController;
 

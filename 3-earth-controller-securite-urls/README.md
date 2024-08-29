@@ -527,3 +527,29 @@ class Kernel
     }
 }
 ```
+
+# Oups !
+
+> Dernière chose :
+> - créer un dossier *controller* dans *src*
+> - déplacer le fichier *AppController* dans *src/controller*
+> - modifier le namespace de *AppController.ph*p
+> - modifier le use dans *vendor/classes/Kernel.php*
+
+- src/controller/AppController.php
+```php
+<?php
+namespace App\controller;
+...
+```
+
+- vendor/classes/Kernel.php
+
+```php
+<?php
+namespace vendor\classes;
+
+use vendor\classes\Router;
+use App\controller\AppController;
+...
+```
