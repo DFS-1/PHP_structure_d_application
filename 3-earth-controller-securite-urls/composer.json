@@ -1,0 +1,16 @@
+{
+	"name": "earth/mvc",
+	"authors": [
+		{
+			"name": "webew",
+			"email": "fillion.bertrand@gmail.com"
+		}
+	],
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"vendor\\classes\\": "vendor/classes/",
+			"App\\": "src/"
+		}
+	}
+}

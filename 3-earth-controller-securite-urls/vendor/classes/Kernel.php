@@ -1,10 +1,13 @@
 <?php
-require_once CLASSES . 'Router.php';
-require_once CLASSES . 'AppController.php';
+
+namespace vendor\classes;
+
+use vendor\classes\Router;
+use vendor\classes\AppController;
 
 class Kernel
 {
-    public function bootstrap()
+    public static function bootstrap()
     {
         $router = new Router();
 

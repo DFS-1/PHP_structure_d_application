@@ -1,6 +1,6 @@
 <header>
     <?php include TEMPLATE_PARTS . '/_nav.php' ?>
-    <h1>SERVICES</h1>
+    <h1><?= $title ?></h1>
 </header>
 <main>
     <section class="sectionImgH2P">

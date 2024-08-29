@@ -1,6 +1,7 @@
 <?php
-require_once './src/config/config.php';
-require_once CLASSES . 'Kernel.php';
+require_once './vendor/config/config.php';
+require_once './vendor/autoload.php';
 
-$kernel = new Kernel();
-$kernel->bootstrap();
+use vendor\classes\Kernel;
+
+Kernel::bootstrap();

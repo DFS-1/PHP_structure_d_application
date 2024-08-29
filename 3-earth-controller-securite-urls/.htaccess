@@ -1,0 +1,5 @@
+# Activer le moteur de réécriture
+RewriteEngine On
+
+# Réécriture générique pour toutes les pages
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php?page=$1 [L]

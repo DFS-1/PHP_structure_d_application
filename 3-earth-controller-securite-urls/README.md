@@ -467,6 +467,13 @@ Dans *src/template/template-parts/_nav.php* :
 </nav>
 ```
 
+- Sur Ubuntu, activer le mode rewrite :
+
+```bash
+sudo a2enmod rewrite
+sudo systemctl restart apache2
+```
+
 Puis créer une fichier *.htaccess* à la racine du projet contenant le code :
 
 ```apacheconf
